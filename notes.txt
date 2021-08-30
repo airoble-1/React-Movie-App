@@ -13,3 +13,23 @@ Sending Requests
 --> Axios a thrid party promised based 
 --> Fetch API built in to browsers 
 --> data is sent back in JSON but needs to be converted to an JS object
+--> HTTP requests are handled using promises (then/catch or async/await)
+--> Provide users with loading "state" during data fetch and other states "No movies found", "List of Movies", and "Loading"
+User need to know which state the app has
+
+Error handling 
+--> try/catch and then/catch 
+--> fetch API does not throw an error with a non successful response (ex 4XX or 5XX status code) but axios does generate an error
+--> new error state & UI change
+
+UseEffect
+--> fetch data on user page automatically not manually with button click
+--> UseEffect() to accomplish the side effect on component mounting with function pointer dependemncy
+--> Note objects are reference values so new object with each component re-evaluation therefore useCallback() to save function in cache for comparision to 
+--> hoisting when "function" keyword is used means function can be called before its declared no longer the case 
+
+POST requests
+--> Dummy backend w/Rest API & database like Firebase to send POST requests
+--> Usually creates a resource/node with the data; outcome   depends on API
+--> POST body needs JSON use stringify()
+-->
