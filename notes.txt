@@ -1,0 +1,15 @@
+1. How React Apps interact with DBs
+2. Sending HTTP Requests and Using Responses
+3. Error handling & loading state   
+
+How Browser side code connects to database
+--> indirect communication is best practice; otherwise db credentials would be exposed in the browser by visitors to website
+see link for more details.
+--> Back end app on server will commnunicate with DB and client side app will communicate with back end via API urls  
+--> API - clearly defined interface or rules to acquire resources or results; in terms of http request there are two API standards RESTful and GraphQL for how a server should expose its data 
+--> URLs or entry points = certain data
+
+Sending Requests
+--> Axios a thrid party promised based 
+--> Fetch API built in to browsers 
+--> data is sent back in JSON but needs to be converted to an JS object
